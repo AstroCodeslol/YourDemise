@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Miniscule Amount Of Trolling</title>
+    <link rel="icon" href="troll.png">
+    <style>
+        body{
+            background: radial-gradient(rgb(50,50,50),rgb(20,20,20));
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p{
+            font-size: 2rem;
+            text-align: center;
+            font-weight: bold;
+            font-family: monospace;
+            color: white;
+        }
+
+        button{
+            height: 50px;
+            text-align: center;
+            font-weight: bold;
+            font-family: monospace;
+            color: black;
+            border-radius: 10px;
+            border: black 2px solid;
+        }
+
+        .spin {
+  width: 200px; /* Adjust as needed */
+  height: 200px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <p>We Partake In A Miniscule <br>Amount Of Trolling <br> W.P.I.A.M</p>
+    <img src="troll.png" style="width: 200px;" class="spin"> 
+    <p style="font-size: 1rem;" id="quote">"The world never changes. We do."</p> 
+    <p style="font-size: 1rem;">TAKING BACK WHATS LEGALLY MINE</p> 
+    <p style="font-size: 1rem;">Thanks. For. Your. Life.</p> 
+    <a href="http://instagram.com/ceo.tkay"><button>Partake In This Tomfoolery -></button>  </a>
+</body>
+
+<script>
+    const darkQuotes = [
+  "Most of this world is just death. Nothing more. From the moment you're born, you start your journey toward death.", // Johan Liebert
+  "People love to see others fall. It’s in human nature.", // Johan Liebert
+  "Hatred is born when people come together. It will never disappear.", // Johan Liebert
+  "Humans will believe any lie as long as it comforts them.", // Friend
+  "People will always choose the devil they know over the unknown truth.", // Friend
+  "I really though that I'd already reached the darkest of the dark, but then, ahead of me, I beheld a darkness even greater still.",
+  "I Want To Thank My Old Self For Being An Idiot"
+    ];
+
+    document.getElementById("quote").textContent = darkQuotes[Math.floor(Math.random() * darkQuotes.length)];
+</script>
+</html>
